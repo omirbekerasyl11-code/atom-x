@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-white text-navy-900 font-sans antialiased}
+@layer components{
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition duration-200 active:scale-95}
+.btn-primary{@apply btn bg-gradient-to-r from-cyanx to-violetx text-white shadow-lg shadow-violetx/25 hover:brightness-110}
+.btn-ghost{@apply btn border border-navy-900/15 text-navy-900 hover:bg-navy-900/5}
+.btn-dark{@apply btn border border-white/20 text-white hover:bg-white/10}
+.card{@apply rounded-2xl border border-navy-900/10 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-violetx/10}}
